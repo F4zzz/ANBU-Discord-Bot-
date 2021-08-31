@@ -70,7 +70,7 @@ async def playcc (ctx):
 
 @client.command(name='membros')
 async def membros (ctx):
-    id = client.get_guild(807023277687046184)
+    id = client.get_guild({guild})
     embed = discord.Embed(title='Número De Membros:', colour=discord.Colour.dark_grey())
     embed.add_field(name='.......................', value=f'Atualmente, o servidor possui **{id.member_count}**  membros')
     await ctx.send(embed=embed)
